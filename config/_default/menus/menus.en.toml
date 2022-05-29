@@ -4,6 +4,12 @@
   identifier = "contributing"
   url = "/docs/"
 
+[[docs]]
+  name = "Help"
+  weight = 60
+  identifier = "help"
+  url = "/docs/help/"
+
 [[main]]
   name = "Docs"
   url = "/docs/introduction/"
