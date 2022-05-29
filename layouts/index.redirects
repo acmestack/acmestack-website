@@ -5,7 +5,7 @@
 {{- end -}}
 
 # released version redirects
-/released/v0.0.1/    /released/v0.0.1/introduction/
+/released/v0.0.1/    /released/v0.0.1/introduction/ 301
 
 # forever
-/docs/              /docs/introduction/
+/docs/              /docs/introduction/ 301

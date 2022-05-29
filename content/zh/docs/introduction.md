@@ -11,3 +11,5 @@ weight: 11
 ---
 
 How to Contributing?
+
+[Quick Start](developer-environment-setting)

@@ -10,8 +10,8 @@ description = "We pay attention and research on computer open source technology,
 docsVersion = "v0.0.1"
 
 ## Open Graph
-images = ["doks.png"]
-ogLocale = "en_US"
+images = ["openingo.png"]
+ogLocale = "zh_CN"
 domainTLD = "openingo.org"
 titleHome = "OpeninGO Community"
 
