@@ -1,0 +1,11 @@
+{{- range $p := .Site.Pages -}}
+{{- range .Aliases }}
+{{ . }} {{ $p.RelPermalink -}}
+{{- end }}
+{{- end -}}
+
+# released version redirects
+/released/v0.0.1/    /released/v0.0.1/introduction/
+
+# forever
+/docs/              /docs/introduction/

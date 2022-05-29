@@ -1,0 +1,15 @@
+[en]
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 10
+  [en.params]
+    languageISO = "EN"
+    languageContextPath = ""
+
+[zh]
+  languageName = "中文"
+  contentDir = "content/zh"
+  weight = 10
+  [zh.params]
+    languageISO = "中文"
+    languageContextPath = "/zh"

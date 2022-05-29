@@ -1,0 +1,87 @@
+# Meta Data for SEO
+
+## Homepage
+title = "OpeninGO"
+titleSeparator = "-"
+titleAddition = "Opening Technology Observer"
+description = "We pay attention and research on computer open source technology, and aim to use open source to give back to open source."
+
+## Documentation
+docsVersion = "v0.0.1"
+
+## Open Graph
+images = ["doks.png"]
+ogLocale = "en_US"
+domainTLD = "openingo.org"
+titleHome = "OpeninGO Community"
+
+## JSON-LD
+# schemaType = "Person"
+schemaType = "Organization"
+schemaName = "OpeninGO"
+schemaAuthor = "qicz"
+schemaAuthorGitHub = "https://github.com/openingo"
+schemaLocale = "en-US"
+schemaLogo = "openingo-logo.png"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaImage = "openingo.png"
+schemaImageWidth = 1280
+schemaImageHeight = 640
+schemaLinkedIn = ""
+schemaGitHub = "https://github.com/openingo"
+schemaSection = "blog"
+
+## Sitelinks Search Box
+siteLinksSearchBox = false
+
+## Chrome Browser
+themeColor = "#fff"
+
+# Images
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+smallLimit = "300"
+
+# Footer
+footer = "<center>Copyright © 2013-2022 <a class=\"text-muted\" href=\"https://openingo.org/\">OpeninGO</a> All rights reserved.</center>"
+
+# Feed
+copyRight = "Copyright (c) 2013-2022 OpeninGO All rights reserved."
+
+# Alert
+alert = false
+alertDismissable = true
+alertText = "We pay attention and research on computer open source technology, and aim to use open source to give back to open source."
+
+# Edit Page
+# repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
+repoHost = "GitHub"
+#repoHost = "Gitea"
+docsRepo = "https://github.com/openingo/openingo-website"
+docsRepoBranch = "main"
+docsRepoSubPath = ""
+editPage = true
+lastMod = true
+
+[options]
+  lazySizes = true
+  clipBoard = true
+  instantPage = true
+  flexSearch = true
+  darkMode = true
+  bootStrapJs = true
+  breadCrumb = true
+  highLight = true
+  kaTex = false
+  multilingualMode = true
+  docsVersioning = true
+  fullWidth = false
+
+[menu]
+  [menu.section]
+    auto = true
+    collapsibleSidebar = true
