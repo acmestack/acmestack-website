@@ -36,16 +36,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-![File Encoding](file-encoding.png)
-
 ![Set Copyright](copyright0.jpg)
 
 ![Default Copyright](copyright1.jpg)
 
 ## Settings
 
+![File Encoding](file-encoding.png)
+
 ![Auto Save](image-20220510221202239.png)
 
 ![Go Code Style](image-20220510221300999.png)
-
-
