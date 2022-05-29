@@ -9,10 +9,12 @@ images: []
 menu:
   docs:
     parent: "help"
-weight: 11
+weight: 100
 toc: true
 ---
 
 ## Create new docs
 
 ## Create single doc with image
+
+## Release docs

@@ -36,7 +36,7 @@ toc: true
   - All new packages and most new significant functionality must come with unit tests.
   - Table-driven tests are preferred for testing multiple scenarios/inputs. 
   - Do not expect an asynchronous thing to happen immediately---do not wait for one second and expect a pod to be running. Wait and retry instead.
-  - See the [testing guide](testing-guide.md) for additional testing advice.
+  - See the [testing guide](../testing-guide) for additional testing advice.
 
 ## Directory and file conventions
 

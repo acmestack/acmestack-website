@@ -10,7 +10,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "Contributing"
+    parent: "contributing"
 weight: 66
 toc: true
 ---
@@ -19,7 +19,7 @@ toc: true
 
 This guide is for contributors who already have a pull request to submit.
 
-First-time contributors should head to the [Contributor Guide](README.md) to get started, and the [Contributor Guide](README.md) also applies to **all developers**.
+First-time contributors should head to the [Contributor Guide](../guide) to get started, and the [Contributor Guide](../guide) also applies to **all developers**.
 
 **Make sure your pull request adheres to our best practices.
 These include following project conventions, making small pull requests, and commenting thoroughly. Please read the more detailed section on [Best Practices for Faster Reviews](#best-practices-for-faster-reviews) at the end of this doc.**
@@ -33,7 +33,7 @@ You can run these local verifications before you submit your pull request to pre
 Merging a pull request requires the following steps to be completed before the pull request will be merged automatically.
 
 - [Open a pull request](https://help.github.com/articles/about-pull-requests/)
-- Sign [Contributor License Agreement](contributor-license-agreement.md) for first-time contributors
+- Sign [Contributor License Agreement](../contributor-license-agreement) for first-time contributors
 - Pass all e2e tests
 - Get all necessary approvals from reviewers and code owners
 
@@ -119,7 +119,7 @@ Let's talk about best practices so your pull request gets reviewed quickly.
 
 ## Familiarize yourself with project conventions
 
-[Coding conventions](coding-conventions.md)
+[Coding conventions](../coding-conventions)
 
 ## KISS, YAGNI, MVP, etc.
 
@@ -215,7 +215,7 @@ We might still ask you to clean up your commits at the very end for the sake of 
 
 Each commit should have a good title line (<70 characters) and include an additional description paragraph describing in more detail the change intended.
 
-For more information, see [squash commits](github-workflow-guide.md#squash-commits).
+For more information, see [squash commits](../github-workflow-guide#squash-commits).
 
 **General squashing guidelines:**
 

@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "Contributing"
+    parent: "contributing"
 weight: 44
 toc: true
 ---
@@ -260,7 +260,7 @@ will create the PR branch inside the main repository rather than inside your for
 
 ## 10. Commit message template
 
-[commit message guidelines](pull-requests.md#commit-message-guidelines)
+[commit message guidelines](../pull-requests#commit-message-guidelines)
 
 1. Specify the type of commit:
    - feat: The new feature you're adding to a particular application
