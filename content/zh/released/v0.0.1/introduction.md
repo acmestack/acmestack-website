@@ -12,4 +12,4 @@ weight: 11
 
 How to Contributing?
 
-[Quick Start]({{< relref "developer-environment-setting" >}})
+[Quick Start](../contributing/developer-environment-setting)
