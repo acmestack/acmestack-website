@@ -16,3 +16,5 @@ toc: true
 ## Create new docs
 
 ## Create single doc with image
+
+## Release docs
