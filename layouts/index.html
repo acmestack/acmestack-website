@@ -6,19 +6,13 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/introduction/" role="button">Get Started</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ .Site.Params.languageContextPath }}/docs/introduction/" role="button" title="{{ i18n "get-started" }}">{{ i18n "get-started" }}</a>
     </div>
   </div>
 </section>
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
-  {{ if eq $.Site.Language "en" }}
-  <section class="section section-sm">
-    <div class="container">
-    </div>
-  </section>
-  {{ end }}
 {{ end }}
 
 {{ define "sidebar-footer" }}
