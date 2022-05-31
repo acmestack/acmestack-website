@@ -17,12 +17,12 @@ toc: true
 
 After creating your first Pull Request the CLA assistant bot will respond with information regarding your CLA status along with a link to sign the CLA.
 
-![CLAassistant Tips](cla-tips.png)
+![CLAassistant Tips](cla-tips.jpg)
 
 > make sure the `git config user.name` same for GitHub name. otherwise will respond to messages like follow
 
-![CLAassistant git user not match](cls-gituser-notmatch-tips.png)
+reply the message **I have read the CLA Document and I hereby sign the CLA** to sign CLA. and reply the messasge **recheck** to check the sign state
 
-click the **Contributor License Agreement** link to sign CLA.
+![Reply Message](reply-message.jpg)
 
-![CLA signed](cla-signed.png)
+![CLA signed](cla-signed.jpg)
