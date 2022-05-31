@@ -19,7 +19,7 @@ After creating your first Pull Request the CLA assistant bot will respond with i
 
 ![CLAassistant Tips](cla-tips.jpg)
 
-> make sure the `git config user.name` same for GitHub name. otherwise will respond to messages like follow
+> make sure the `git config user.name` same for GitHub name.
 
 reply the message **I have read the CLA Document and I hereby sign the CLA** to sign CLA. and reply the messasge **recheck** to check the sign state
 
