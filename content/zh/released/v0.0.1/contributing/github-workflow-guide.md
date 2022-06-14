@@ -15,7 +15,7 @@ toc: true
 
 ## 1. Fork in the cloud
 
-1. Visit https://github.com/openingo
+1. Visit https://github.com/acmestack
 2. Choose one project
 2. Click `Fork` button (top right) to establish a cloud-based fork.
 
@@ -31,7 +31,7 @@ toc: true
 ## 3. Set remote repository to sync updates
 
   ```sh
-  git remote add upstream https://github.com/openingo/{project-name}.git
+  git remote add upstream https://github.com/acmestack/{project-name}.git
   ```
 
 ### Keep your branch in sync

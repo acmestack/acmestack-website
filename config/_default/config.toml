@@ -1,4 +1,4 @@
-baseurl = "https://openingo.org/"
+baseurl = "https://acmestack.org/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true

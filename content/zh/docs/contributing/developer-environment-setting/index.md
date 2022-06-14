@@ -20,7 +20,7 @@ toc: true
 > Copy all with format
 
 ```
-Copyright (c) $today.year, OpeningO
+Copyright (c) $today.year, AcmeStack
 All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
