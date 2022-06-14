@@ -1,7 +1,7 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "OpeninGO"
+title = "AcmeStack"
 titleSeparator = "-"
 titleAddition = "Opening Technology Observer"
 description = "We pay attention and research on computer open source technology, and aim to use open source to give back to open source."
@@ -10,26 +10,26 @@ description = "We pay attention and research on computer open source technology,
 docsVersion = "v0.0.1"
 
 ## Open Graph
-images = ["openingo.png"]
+images = ["acmestack.png"]
 ogLocale = "zh_CN"
-domainTLD = "openingo.org"
-titleHome = "OpeninGO Community"
+domainTLD = "acmestack.org"
+titleHome = "AcmeStack Community"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "OpeninGO"
+schemaName = "AcmeStack"
 schemaAuthor = "qicz"
-schemaAuthorGitHub = "https://github.com/openingo"
+schemaAuthorGitHub = "https://github.com/acmestack"
 schemaLocale = "en-US"
-schemaLogo = "openingo-logo.png"
+schemaLogo = "acmestack-logo.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "openingo.png"
+schemaImage = "acmestack.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/openingo"
+schemaGitHub = "https://github.com/acmestack"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -47,10 +47,10 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "<center>Copyright © 2013-2022 <a class=\"text-muted\" href=\"https://openingo.org/\">OpeninGO</a> All rights reserved.</center>"
+footer = "<center>Copyright © 2013-2022 <a class=\"text-muted\" href=\"https://acmestack.org/\">AcmeStack</a> All rights reserved.</center>"
 
 # Feed
-copyRight = "Copyright (c) 2013-2022 OpeninGO All rights reserved."
+copyRight = "Copyright (c) 2013-2022 AcmeStack All rights reserved."
 
 # Alert
 alert = false
@@ -61,7 +61,7 @@ alertText = "We pay attention and research on computer open source technology, a
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/openingo/openingo-website"
+docsRepo = "https://github.com/acmestack/acmestack-website"
 docsRepoBranch = "main"
 docsRepoSubPath = ""
 editPage = true

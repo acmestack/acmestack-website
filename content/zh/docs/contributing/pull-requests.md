@@ -1,8 +1,8 @@
 ---
 title: "Pull Request Process"
-description: "This doc explains the process and best practices for submitting a pull request to the OpeninGO project and its associated sub-repositories. 
+description: "This doc explains the process and best practices for submitting a pull request to the AcmeStack project and its associated sub-repositories. 
 It should serve as a reference for all contributors, and be useful especially to new and infrequent submitters."
-lead: "This doc explains the process and best practices for submitting a pull request to the OpeninGO project and its associated sub-repositories. 
+lead: "This doc explains the process and best practices for submitting a pull request to the AcmeStack project and its associated sub-repositories. 
 It should serve as a reference for all contributors, and be useful especially to new and infrequent submitters."
 date: 2020-10-06T08:49:31+00:00
 lastmod: 2020-10-06T08:49:31+00:00
@@ -101,9 +101,9 @@ Read on to learn more about how to get faster reviews by following best practice
 
 # Best Practices for Faster Reviews
 
-Most of this section is not specific to OpeninGO, but it's good to keep these best practices in mind when you're making a pull request.
+Most of this section is not specific to AcmeStack, but it's good to keep these best practices in mind when you're making a pull request.
 
-You've just had a brilliant idea on how to make OpeninGO better.
+You've just had a brilliant idea on how to make AcmeStack better.
 Let's call that idea Feature-X.
 Feature-X is not even that complicated.
 You have a pretty good idea of how to implement it.
@@ -154,7 +154,7 @@ A pull request with 25 commits is still very cumbersome to review, so use your b
 Or, going back to our prefactoring example, you could also fork a new branch, do the prefactoring there and send a pull request for that.
 If you can extract whole ideas from your pull request and send those as pull requests of their own, you can avoid the painful problem of continually rebasing.
 
-OpeninGO is a fast-moving codebase - lock in your changes ASAP with your small pull request, and make merges be someone else's problem.
+AcmeStack is a fast-moving codebase - lock in your changes ASAP with your small pull request, and make merges be someone else's problem.
 
 Multiple small pull requests are often better than multiple commits.
 Don't worry about flooding us with pull requests. We'd rather have 100 small,obvious pull requests than 10 unreviewable monoliths.
@@ -293,7 +293,7 @@ Wrapping the width at 72 characters ensures the body text will be centered and e
 
 You can provide additional context with fewer characters by prefixing your
 commit message with the [kind] or [area] that your PR is impacting.
-These are commonly used labels that other members of the OpeninGO community will
+These are commonly used labels that other members of the AcmeStack community will
 understand.
 
 **Examples:**

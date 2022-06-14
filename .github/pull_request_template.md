@@ -12,7 +12,7 @@ Why are we doing this? What use cases does it support? What is the expected outc
 
 ## Checks
 
-- [ ] Read [Create a Pull Request](https://openingo.org/docs/contributing-guide)
+- [ ] Read [Create a Pull Request](https://acmestack.org/docs/contributing-guide)
 - [ ] Supports all screen sizes (if relevant)
 - [ ] Supports both light and dark mode (if relevant)
 - [ ] Passes `npm run test`
