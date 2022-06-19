@@ -21,6 +21,8 @@ Open source as we understand it：
 
 - Open Source is a More Innovative Way to Value
 - Open source is a way to bring together the wisdom of many people
+- Open source is open and inclusive
+- Open source is hobby driven
 
 Officially because of these, we have come together to create more valuable things together.
 
@@ -30,6 +32,6 @@ We are open source enthusiasts from various fields. Some have been in the techni
 
 ### Join Us
 
-We welcome open source enthusiasts from all fields to join us.
+If you also love open source and hope to contribute to open source together, mail us and welcome to join us
 
 contactus#openingo.org
