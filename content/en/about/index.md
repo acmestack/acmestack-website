@@ -9,7 +9,7 @@ images: []
 
 The predecessor of AcmeStack is OpeninGO. OpeninGO was founded on September 30, 2013. It focuses on and researches computer open source technology, and aims to use open source to give back to open source.
 
-Due to the misunderstanding that OpeninGO's "inGO" only focuses on golang-related fields, it was renamed AcmeStack on June 14, 2022.
+Due to the misunderstanding that OpeninGO's "inGO" only focuses on golang-related fields, it was renamed AcmeStack on June 14, 2022. And transferred the projects from the OpeninGO period to the new [OpeninGO](https://github.com/openingo).
 
 AcmeStack means top stack, and still inherits the original intention of OpeninGO: focuses on and researches computer open source technology, and aims to use open source to give back to open source.
 
@@ -17,7 +17,7 @@ AcmeStack means top stack, and still inherits the original intention of OpeninGO
 
 Open source as we understand it：
 
-- Open Source is a More Innovative Way to Value
+- Open source is a More Innovative Way to Value
 - Open source is a way to bring together the wisdom of many people
 - Open source is open and inclusive
 - Open source is hobby driven

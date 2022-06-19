@@ -9,7 +9,7 @@ images: []
 
 AcmeStack前身是OpeninGO，OpeninGO创建于2013年9月30日，关注和研究计算机开源技术，旨在用开源回馈开源。
 
-因OpeninGO的“inGO”造成了我们只关注Golang相关领域的误解，于22年6月14号更名为AcmeStack。
+因OpeninGO的“inGO”造成了我们只关注Golang相关领域的误解，于22年6月14号更名为AcmeStack。并将OpeninGO时期的项目转移到了全新的[OpeninGO](https://github.com/openingo)。
 
 AcmeStack意为顶栈，依然继承了OpeninGO的初衷：关注和研究计算机开源技术，旨在用开源回馈开源。
 
