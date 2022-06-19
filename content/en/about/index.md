@@ -9,9 +9,9 @@ images: []
 
 AcmeStack, formerly known as OpeninGO, pays attention to and researches computer open source technology, and aims to use open source to give back to open source.
 
-Due to the misunderstanding that OpeninGO's "inGO" only focuses on Golang-related fields, it was renamed AcmeStack on June 14, 2022.
+Due to the misunderstanding that OpeninGO's "inGO" only focuses on golang-related fields, it was renamed AcmeStack on June 14, 2022.
 
-AcmeStack means top stack, and still inherits the original intention of OpeninGO: to pay attention to and study computer open source technology, aiming to use open source to give back to open source.
+AcmeStack means top stack, and still inherits the original intention of OpeninGO: pays attention to and researches computer open source technology, and aims to use open source to give back to open source.
 
 ### for what？
 
