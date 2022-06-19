@@ -22,7 +22,7 @@ Open source as we understand it：
 - Open source is open and inclusive
 - Open source is hobby driven
 
-Officially because of these, we have come together to create more valuable things together.
+It is for these reasons that we have come together to create something more valuable.
 
 ### Who are we？
 
