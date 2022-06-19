@@ -30,6 +30,6 @@ We are open source enthusiasts from various fields. Some have been in the techni
 
 ### Join Us
 
-If you also love open source and hope to contribute to open source together, mail us and welcome to join us
+If you also love open source and hope to contribute to open source together, mail us and welcome to join us.
 
 contactus#openingo.org
