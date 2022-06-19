@@ -47,7 +47,7 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "<center>Copyright © 2013-2022 <a class=\"text-muted\" href=\"https://acmestack.org/\">AcmeStack</a> All rights reserved.</center>"
+footer = "Copyright © 2013-2022 <a class=\"text-muted\" href=\"https://acmestack.org/\">AcmeStack</a> All rights reserved."
 
 # Feed
 copyRight = "Copyright (c) 2013-2022 AcmeStack All rights reserved."
