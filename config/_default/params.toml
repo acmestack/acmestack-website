@@ -3,8 +3,8 @@
 ## Homepage
 title = "AcmeStack"
 titleSeparator = "-"
-titleAddition = "Opening Technology Observer"
-description = "We pay attention and research on computer open source technology, and aim to use open source to give back to open source."
+titleAddition = "The Opening Technology Observer"
+description = "focuses on and researches computer open source technology, and aims to use open source to give back to open source."
 
 ## Documentation
 docsVersion = "v0.0.1"
@@ -55,7 +55,7 @@ copyRight = "Copyright (c) 2013-2022 AcmeStack All rights reserved."
 # Alert
 alert = false
 alertDismissable = true
-alertText = "We pay attention and research on computer open source technology, and aim to use open source to give back to open source."
+alertText = "focuses on and researches computer open source technology, and aims to use open source to give back to open source."
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
