@@ -7,8 +7,6 @@ draft: false
 images: []
 ---
 
-### AcmeStack?
-
 AcmeStack, formerly known as OpeninGO, pays attention to and researches computer open source technology, and aims to use open source to give back to open source.
 
 Due to the misunderstanding that OpeninGO's "inGO" only focuses on Golang-related fields, it was renamed AcmeStack on June 14, 2022.
