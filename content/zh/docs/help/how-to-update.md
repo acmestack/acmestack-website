@@ -1,7 +1,7 @@
 ---
-title: "How to Update"
-description: "How to update or add docs."
-lead: "How to update or add docs."
+title: "如何更新"
+description: "如何更新或添加文档。"
+lead: "如何更新或添加文档。"
 date: 2020-11-12T13:26:54+01:00
 lastmod: 2020-11-12T13:26:54+01:00
 draft: false
@@ -13,8 +13,8 @@ weight: 100
 toc: true
 ---
 
-## Create new docs
+## 创建新文档
 
-## Create single doc with image
+## 创建一个带图片的文档
 
-## Release docs
+## 发布文档
