@@ -56,8 +56,6 @@ D、在此期间，您的pull request可能会在其发布工作完成时保持�
 
 如果您觉得您的pull request处于这种状态，请联系我们进行澄清。
 
-如果您对自动化如何准确处理pull request的详细信息感兴趣，请查看本文档末尾的[测试和合并工作流程](#the-testing-and-merge-workflow) 。
-
 ## e2e 测试如何工作
 
 端到端测试会将状态结果发布到 pull request.
@@ -209,7 +207,7 @@ AcmeStack 是一个快速发展的代码库 - 通过您的小请求尽快锁定�
 
 每个提交都应该有一个好的标题行（<70 个字符），并包含一个额外的描述段落，更详细地描述预期的更改。
 
-有关详细信息，请参阅 [压缩提交](../github-workflow-guide#squash-commits).
+有关详细信息，请参阅 [压缩提交](../github-workflow-guide#压缩提交).
 
 **一般压缩指南：**
 
