@@ -1,7 +1,7 @@
 ---
-title: "Contributor Guide"
-description: "the AcmeStack contributor guide."
-lead: "the AcmeStack contributor guide."
+title: "贡献者指南"
+description: "AcmeStack社区贡献者指南。"
+lead: "AcmeStack社区贡献者指南。"
 date: 2020-10-06T08:49:31+00:00
 lastmod: 2020-10-06T08:49:31+00:00
 draft: false
@@ -13,8 +13,8 @@ weight: 15
 toc: true
 ---
 
-This guide is for contributors who already have a pull request to submit.
+本指南适用于已经提交Pull Request的贡献者。
 
-First-time contributors should head to the Contributor Guide to get started, and the Contributor Guide also applies to **all developers**.
+首次贡献者应从贡献者指南开始，贡献者指南也适用于**所有开发者**。
 
-Let's start from [developer-environment-setting](../developer-environment-setting)
+让我们从[开发者环境设置](../developer-environment-setting)开始

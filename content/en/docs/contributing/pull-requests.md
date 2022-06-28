@@ -56,8 +56,6 @@ During this time, your pull request could remain unmerged while their release wo
 
 If you feel your pull request is in this state, contact us for clarification.
 
-Check the [The Testing and Merge Workflow](#the-testing-and-merge-workflow) at the end of this document if you're interested in the details on how exactly the automation processes pull requests.
-
 ## How the e2e Tests Work
 
 The end-to-end tests will post the status results to the pull request.

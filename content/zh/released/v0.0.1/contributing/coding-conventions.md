@@ -1,6 +1,6 @@
 ---
-title: "Code conventions"
-description: "Code conventions"
+title: "代码规范"
+description: "代码规范"
 lead: ""
 date: 2020-11-12T13:26:54+01:00
 lastmod: 2020-11-12T13:26:54+01:00
@@ -16,40 +16,40 @@ toc: true
 - Go
   - [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
   - [Effective Go](https://golang.org/doc/effective_go.html)
-  - Know and avoid [Go landmines](https://gist.github.com/lavalamp/4bd23295a9f32706a48f)
-  - Comment your code.
+  - 了解和避免 [Go landmines](https://gist.github.com/lavalamp/4bd23295a9f32706a48f)
+  - 代码注释
     - [Go's commenting conventions](http://blog.golang.org/godoc-documenting-go-code)
-    - If reviewers ask questions about why the code is the way it is, that's a sign that comments might be helpful.
-    - Command-line flags should use dashes, not underscores
-    - Naming
-      - Please consider package name when selecting an interface name, and avoid redundancy. For example, `storage.Interface` is better than `storage.StorageInterface`.
-      - Do not use uppercase characters, underscores, or dashes in package names.
-      - Please consider parent directory name when choosing a package name. For example, `pkg/controllers/autoscaler/foo.go` should say `package autoscaler` not `package autoscalercontroller`.
-          - Unless there's a good reason, the `package foo` line should match the name of the directory in which the `.go` file exists.
-          - Importers can use a different name if they need to disambiguate.
-      - Locks should be called `lock` and should never be embedded (always `lock sync.Mutex`). When multiple locks are present, give each lock a distinct name following Go conventions: `stateLock`, `mapLock` etc.
+    - 如果审查者询问这段代码为什么是这样，那么注释会非常有用。
+    - 命令行标志应该使用破折号，而不是下划线
+    - 命名
+      - 选择接口名称时请考虑包名，避免冗余。 例如, `storage.Interface` 优于 `storage.StorageInterface`。
+      - 不要在包名称中使用大写字符、下划线或破折号。
+      - 选择包名时请考虑父目录名。 例如, `pkg/controllers/autoscaler/foo.go` 应该叫 `package autoscaler` 而不是 `package autoscalercontroller`。
+          - 除非有充分的理由, `package foo` 行应该与 `.go` 文件所在目录的名称相匹配。
+          - 如果需要消除歧义，引入者可以使用不同的名称。
+      - 锁应该被称为 `lock` 并且永远不应该被嵌入 (always `lock sync.Mutex`). 当存在多个锁时，按照 Go 约定为每个锁指定一个不同的名称： `stateLock`, `mapLock` 等。
     - [API conventions]
     - [Logging conventions]
 
-## Testing conventions
+## 测试规范
 
-  - All new packages and most new significant functionality must come with unit tests.
-  - Table-driven tests are preferred for testing multiple scenarios/inputs. 
-  - Do not expect an asynchronous thing to happen immediately---do not wait for one second and expect a pod to be running. Wait and retry instead.
-  - See the [testing guide](../testing-guide) for additional testing advice.
+  - 所有新包和重要的新功能都必须附带单元测试。
+  - 表驱动测试是测试多个场景/输入的首选。
+  - 不要期望异步的事情会立即发生——不要等待一秒钟就期望 pod 正在运行。请等待并重试。
+  - 有关其他测试建议，请参阅 [测试指南](../testing-guide) 。
 
-## Directory and file conventions
+## 目录和文件规范
 
-  - Avoid package sprawl. Find an appropriate subdirectory for new packages.
-    - Libraries with no appropriate home belong in new package subdirectories of `pkg/util`.
-  - Avoid general utility packages. Packages called "util" are suspect. Instead, derive a name that describes your desired function. For example, the utility functions dealing with waiting for operations are in the `wait` package and include functionality like `Poll`. The full name is `wait.Poll`.
-  - All filenames should be lowercase.
-  - Go source files and directories use underscores, not dashes.
-    - Package directories should generally avoid using separators as much as possible. When package names are multiple words, they usually should be in nested subdirectories.
-  - Document directories and filenames should use dashes rather than underscores.
-  - Follow these conventions for third-party code:
-    - Go code for normal third-party dependencies is managed using [go modules](https://github.com/golang/go/wiki/Modules).
-    - Other third-party code belongs in `third_party`.
-      - forked third party Go code goes in `third_party/forked`.
-      - forked _golang stdlib_ code goes in `third_party/forked/golang`.
-    - Third-party code must include licenses. This includes modified third-party code and excerpts, as well.
+  - 避免包杂乱无章。为新包找到合适的子目录。
+    - 没有合适主目录的包放入新的包子目录 `pkg/util`.
+  - 避免使用通用的包. 名为“util”的包是没有明确含义的。相反，创建一个描述您所需功能的名称。 例如, 处理等待操作的实际函数在 `wait` 包中并包括类似的功能`Poll`。 全称是 `wait.Poll`。
+  - 所有文件名都应为小写。
+  - Go 源文件和目录使用下划线，而不是破折号。
+    - 包目录通常应尽可能避免使用分隔符。当包名是多个单词时，它们通常应该在嵌套的子目录中。
+  - 文档目录和文件名应该使用破折号而不是下划线。
+  - 遵循第三方代码的这些约定：
+    - 普通第三方依赖项的 Go 代码使用 [go modules](https://github.com/golang/go/wiki/Modules) 进行管理。
+    - 其他第三方代码放入 `third_party`.
+      - fork的第三方 Go 代码放入 `third_party/forked`.
+      - forked 的goland标准库放入 `third_party/forked/golang`.
+    - 第三方代码必须包含许可证。这也包括修改后的第三方代码和摘录。
