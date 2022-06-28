@@ -1,7 +1,7 @@
 ---
-title: "GitHub Workflow Guide"
-description: "the github workflow guide"
-lead: "the github workflow guide"
+title: "GitHub 工作流程指南"
+description: "GitHub 工作流程指南"
+lead: "GitHub 工作流程指南"
 date: 2020-11-12T13:26:54+01:00
 lastmod: 2020-11-12T13:26:54+01:00
 draft: false
@@ -13,55 +13,47 @@ weight: 44
 toc: true
 ---
 
-## 1. Fork in the cloud
+## 1. 从云端 Fork
 
-1. Visit https://github.com/acmestack
-2. Choose one project
-2. Click `Fork` button (top right) to establish a cloud-based fork.
+1. 打开 https://github.com/acmestack
+2. 选中一个项目
+2. 单击 `Fork` 按钮 (右上角) 建立一个基于云端的fork.
 
-## 2. Clone fork to local storage
+## 2. Clone fork 到本地
 
-> Per Go's [workspace instructions](https://golang.org/doc/code.html#Workspaces), place project' code on your
-`GOPATH` using the following cloning procedure.
+> 根据 Go语言的 [工作区说明](https://golang.org/doc/code.html#Workspaces), 根据以下命令将克隆下来的项目代码放在您的 GOPATH 上。
 
   ```sh
   git clone git@github.com:<your_name>/{project-name}.git
   ```
 
-## 3. Set remote repository to sync updates
+## 3. 设置远程仓库以同步更新
 
   ```sh
   git remote add upstream https://github.com/acmestack/{project-name}.git
   ```
 
-### Keep your branch in sync
+### 保持分支同步
 
-You will need to periodically fetch changes from the `upstream`
-repository to keep your working branch in sync. Note that depending on which repository you are working from,
-the default branch may be called 'main' instead of 'master'.
+您将需要定期从`upstream`仓库中获取变更来保持您的工作分支同步。请注意，根据您使用的仓库，默认分支可能叫做“main”而不是“master”。
 
-Make sure your local repository is on your working branch and run the
-following commands to keep it in sync:
+确保您的本地仓库位于您的工作分支上并运行以下命令以使其保持同步：
 
 ```sh
 git fetch upstream
 git rebase upstream/master
 ```
 
-Please don't use `git pull` instead of the above `fetch` and
-`rebase`. Since `git pull` executes a merge, it creates merge commits. These make the commit history messy
-and violate the principle that commits ought to be individually understandable
-and useful (see below). 
+请不要使用 `git pull` 而不是以上的 `fetch` 和
+`rebase`. 由于 `git pull`  执行合并，它会创建合并提交。这些使提交历史变得混乱，违反了提交应该是人们易于理解和有用的原则（见下文）。
 
-You might also consider changing your `.git/config` file via
-`git config branch.autoSetupRebase always` to change the behavior of `git pull`, or another non-merge option such as `git pull --rebase`.
+您也可以考虑通过 `git config branch.autoSetupRebase always` 更改您的`.git/config` 文件，以更改 `git pull` 的行为，或其他非合并选项，例如 `git pull --rebase`
 
-## 4. Create a Working Branch
+## 4. 创建一个工作分支
 
-> the following adapt to any new issue.
+>以下适用于任何一个新 issue.
 
-Get your local master up to date. Note that depending on which repository you are working from,
-the default branch may be called "main" instead of "master".
+让您的本地master分支更新到最新状态。请注意，根据您使用的存储库，默认分支可能称为“main”而不是“master”。
 
 ```sh
 cd $working_dir/{project-name}
@@ -70,95 +62,83 @@ git checkout master
 git rebase upstream/master
 ```
 
-### Choose or create an issue
+### 选择或创建一个 issue
 
-Create your new branch.
+创建您的新分支.
 
 ```sh
 git checkout -b issue-id
 ```
 
-You may now edit files on the `issue-id` branch.
+您现在可以在 issue-id`分支上编辑文件
 
-## 5. Commit Your Changes
+## 5. 提交您的变更
 
-You will probably want to regularly commit your changes. It is likely that you will go back and edit,
-build, and test multiple times. After a few cycles of this, you might
-[amend your previous commit](https://www.w3schools.com/git/git_amend.asp).
+您可能希望定期提交您的变更。您可能会返回并多次编辑、构建和测试。在这样的几个循环之后，你可能会[修改你之前的提交](https://www.w3schools.com/git/git_amend.asp).
 
 ```sh
 git commit
 ```
 
-## 6. Push to GitHub
+## 6. 推送到 GitHub
 
-When your changes are ready for review, push your working branch to
-your fork on GitHub.
+当您的更改准备好review时，将您的工作分支推送到 GitHub 上的 fork仓库
 
 ```sh
 git push -f <your_name> issue-id
 ```
 
-## 7. Create a Pull Request
+## 7. 创建一个Pull Request
 
-1. Visit your fork at `https://github.com/<your_name>/{project-name}`
-2. Click the **Compare & Pull Request** button next to your `issue-id` branch.
-3. Check out the pull request [process](pull-requests.md) for more details and
-   advice.
+1. 打开您的 fork `https://github.com/<your_name>/{project-name}`
+2. 单击`issue-id` 分支旁边的 **Compare & Pull Request** 按钮 。
+3. 查看pull request [流程](../pull-requests)以获取更多详细信息和建议。
 
-_If you have upstream write access_, please refrain from using the GitHub UI for
-creating PRs, because GitHub will create the PR branch inside the main
-repository rather than inside your fork.
+如果您有`upstream` 写入权限，请不要使用 GitHub UI 创建 PR，因为 GitHub 将在主仓库中创建 PR 分支，而不是在您的 fork 中。
 
-### Get a code review
+### 获得代码审查
 
-Once your pull request has been opened it will be assigned to one or more
-reviewers.  Those reviewers will do a thorough code review, looking for
-correctness, bugs, opportunities for improvement, documentation and comments,
-and style.
+一旦您的pull request 被打开，它将被分配给一个或多个审阅者。这些审阅者将进行彻底的代码审查，寻找正确性、错误、改进机会、文档和注释以及样式
 
-Commit changes made in response to review comments to the same branch on your
-fork.
+将审阅评论所做的更改提交到您 fork 上的同一分支。 小的 PR 很容易审查。非常大的 PR 很难审查。
 
-Very small PRs are easy to review.  Very large PRs are very difficult to review.
+### 压缩提交
 
-### Squash commits
+审核后，通过压缩提交来准备 PR 以进行合并。
 
-After a review, prepare your PR for merging by squashing your commits.
+审查后留在分支上的所有提交都应代表有意义的里程碑或工作单元。使用提交来增加开发和审查过程的清晰度。
 
-All commits left on your branch after a review should represent meaningful milestones or units of work. Use commits to add clarity to the development and review process.
-
-Before merging a PR, squash the following kinds of commits:
+在合并 PR 之前，压缩以下类型的提交：
 
 - Fixes/review feedback
 - Typos
 - Merges and rebases
 - Work in progress
 
-Aim to have every commit in a PR compile and pass tests independently if you can, but it's not a requirement. In particular, `merge` commits must be removed, as they will not pass tests.
+如果可以的话，旨在让 PR 中的每个提交都独立编译和通过测试，但这不是必需的。特别是，必须删除`merge` 提交，因为它们不会通过测试。
 
-To squash your commits, perform an [interactive rebase](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History):
+要压缩您的提交，请执行 [interactive rebase](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History):
 
-1. Check your git branch:
+1. 检查您的 git 分支:
 
   ```
   git status
   ```
 
-  The output should be similar to this:
+  输出应该与此类似：
 
   ```
   On branch your-contribution
   Your branch is up to date with 'origin/your-contribution'.
   ```
 
-2. Start an interactive rebase using a specific commit hash, or count backwards from your last commit using `HEAD~<n>`, where `<n>` represents the number of commits to include in the rebase.
+2. 使用特定的提交哈希开始一个interactive rebase, 或使用从您上次提交开始倒数 `HEAD~<n>`, 其中 `<n>`表示要包含在 rebase.
 
   ```
   git rebase -i HEAD~3
   ```
 
-  The output should be similar to this:
+  输出应该与此类似：
 
   ```
   pick 2ebe926 Original commit
@@ -178,7 +158,7 @@ To squash your commits, perform an [interactive rebase](https://git-scm.com/book
 
   ```
 
-3. Use a command line text editor to change the word `pick` to `squash` for the commits you want to squash, then save your changes and continue the rebase:
+3. 使用命令行文本编辑器将单词`pick`更改为`squash`来压缩您想要压缩的提交，然后保存更改并继续 rebase：
 
 ```sh
 pick 2ebe926 Original commit
@@ -189,7 +169,7 @@ pick b0315fe Second unit of work
 
 ```
 
-  The output after saving changes should look similar to this:
+  保存更改后的输出应如下所示：
 
   ```sh
   [detached HEAD 61fdded] Second unit of work
@@ -201,31 +181,28 @@ pick b0315fe Second unit of work
   Successfully rebased and updated refs/heads/master.
   ```
 
-4. Force push your changes to your remote branch:
+4. 强制将您的更改推送到远程分支：
 
 ```sh
 git push --force
 ```
 
-For mass automated fixups such as automated doc formatting, use one or more
-commits for the changes to tooling and a final commit to apply the fixup en
-masse. This makes reviews easier.
+对于诸如自动文档格式化之类的大规模自动化修复，对工具的更改使用一个或多个提交，并使用最后一次提交来整体应用修复。这使得审查更容易。
 
-## 8. Merging a commit
+## 8. 合并提交
 
-Once you've received review and approval, your commits are squashed, your PR is ready for merging.
+一旦你收到审查和批准，你的提交就会被压缩，你的 PR 就可以合并了
 
-Merging happens automatically after both a Reviewer and Approver have approved the PR. If you haven't squashed your commits, they may ask you to do so before approving a PR.
+在 Reviewer 和 Approver 都批准 PR 后，合并会自动发生。如果你还没有压缩你的提交，他们可能会在批准 PR 之前要求你这样做。
 
-## 9. Reverting a commit
+## 9. 还原提交
 
-In case you wish to revert a commit, use the following instructions.
+如果您希望还原提交，请使用以下说明。
 
-_If you have upstream write access_, please refrain from using the
-`Revert` button in the GitHub UI for creating the PR, because GitHub
-will create the PR branch inside the main repository rather than inside your fork.
+如果您拥有upstream写入权限, 请不要使用 GitHub UI 中的 `Revert`按钮来创建 PR，因为 GitHub 将在主仓库库中而不是在您的 fork 中创建 PR 分支。
 
-- Create a branch and sync it with upstream. Note that depending on which repository you are working from, the default branch may be called 'main' instead of 'master'.
+
+- 创建一个分支并将其与upstream同步。请注意，根据您使用的仓库，默认分支可能称为“main”而不是“master”。
 
   ```sh
   # create a branch
@@ -236,29 +213,28 @@ will create the PR branch inside the main repository rather than inside your for
   git rebase upstream/master
   ```
 
-- If the commit you wish to revert is a _merge commit_, use this command:
-  
+- 如果您希望恢复的提交是*merge commit*，请使用以下命令：
+
   ```sh
   # SHA is the hash of the merge commit you wish to revert
   git revert -m 1 <SHA>
   ```
 
-- If it is a *single commit*, use this command:
+- 如果是 *single commit*, 使用以下命令:
 
   ```sh
   # SHA is the hash of the single commit you wish to revert
   git revert <SHA>
   ```
 
-- This will create a new commit reverting the changes. Push this new commit to your remote.
-  
+- 这将创建一个新的提交来还原更改。 推送该新提交到您的远程仓库。
   ```sh
   git push <your_remote_name> myrevert
   ```
 
-- Finally, [create a Pull Request](#7-create-a-pull-request) using this branch.
+- 最后, 用这个分支创建一个[ Pull Request](#7-create-a-pull-request) 。
 
-## 10. Commit message template
+## 10. Commit 信息模板
 
 [commit message guidelines](../pull-requests#commit-message-guidelines)
 

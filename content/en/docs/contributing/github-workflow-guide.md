@@ -51,7 +51,7 @@ git rebase upstream/master
 Please don't use `git pull` instead of the above `fetch` and
 `rebase`. Since `git pull` executes a merge, it creates merge commits. These make the commit history messy
 and violate the principle that commits ought to be individually understandable
-and useful (see below). 
+and useful (see below).
 
 You might also consider changing your `.git/config` file via
 `git config branch.autoSetupRebase always` to change the behavior of `git pull`, or another non-merge option such as `git pull --rebase`.
@@ -103,7 +103,7 @@ git push -f <your_name> issue-id
 
 1. Visit your fork at `https://github.com/<your_name>/{project-name}`
 2. Click the **Compare & Pull Request** button next to your `issue-id` branch.
-3. Check out the pull request [process](pull-requests.md) for more details and
+3. Check out the pull request [process](../pull-requests) for more details and
    advice.
 
 _If you have upstream write access_, please refrain from using the GitHub UI for
@@ -237,7 +237,7 @@ will create the PR branch inside the main repository rather than inside your for
   ```
 
 - If the commit you wish to revert is a _merge commit_, use this command:
-  
+
   ```sh
   # SHA is the hash of the merge commit you wish to revert
   git revert -m 1 <SHA>
@@ -251,7 +251,7 @@ will create the PR branch inside the main repository rather than inside your for
   ```
 
 - This will create a new commit reverting the changes. Push this new commit to your remote.
-  
+
   ```sh
   git push <your_remote_name> myrevert
   ```

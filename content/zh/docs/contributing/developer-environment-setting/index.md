@@ -1,6 +1,6 @@
 ---
-title: "Developer environment setting"
-description: "Developer environment setting"
+title: "开发者环境设置"
+description: "开发者环境设置"
 lead: ""
 date: 2020-11-12T13:26:54+01:00
 lastmod: 2020-11-12T13:26:54+01:00
@@ -13,11 +13,11 @@ weight: 22
 toc: true
 ---
 
-> the example for goland  
+> goland的示例
 
-## Copyright
+## 版权
 
-> Copy all with format
+> 带格式复制如下内容
 
 ```
 Copyright (c) $today.year, AcmeStack
@@ -40,7 +40,7 @@ limitations under the License.
 
 ![Default Copyright](copyright1.jpg)
 
-## Settings
+## 设置
 
 ![File Encoding](file-encoding.png)
 
