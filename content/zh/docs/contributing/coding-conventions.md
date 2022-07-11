@@ -31,6 +31,99 @@ toc: true
     - [API conventions]
     - [Logging conventions]
 
+## Go语言代码注释模板
+
+### 普通方法注释
+
+* 模板
+
+```go
+// ${function_name}
+//  @receiver ${receiver}
+//  @param ${params}
+//  @return ${return_types}
+```
+
+* 示例
+
+```go
+// Identity figure the configuration's identity.
+// identity = user + space todo
+//  @receiver configuration current config
+//  @return string identity the configuration's empty able identity
+func (configuration *Configuration) Identity() string {
+}
+```
+
+### 接口注释模板
+
+* 模板
+
+```go
+// ${interface_name}
+```
+
+* 示例
+
+```go
+// IMap map interface
+type IMap interface {
+}
+```
+
+### 接口方法注释模板
+
+* 模板
+
+```go
+// ${function_name} ${todo}
+//  @receiver ${receiver}
+//  @param ${params}
+//  @return ${return_types}
+```
+
+* 示例
+
+```go
+// Get get value element by key
+//  @param key key
+//  @return value value
+//  @return loaded success is true, fail is false
+Get(key interface{}) (value interface{}, loaded bool)
+```
+
+### 结构体注释模板
+
+* 模板
+
+```go
+// ${struct_name}
+```
+
+* 示例
+
+```go
+// Configuration configuration structure
+type Configuration struct {}
+```
+
+### 结构体参数注释模板
+
+* 模板
+
+```go
+// ${struct_field_name} ${todo}
+```
+
+* 示例
+
+```go
+type Configuration struct {
+  // user user information entity
+  user  *entity.User
+}
+```
+
 ## 测试规范
 
   - 所有新包和重要的新功能都必须附带单元测试。
