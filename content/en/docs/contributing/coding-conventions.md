@@ -31,10 +31,103 @@ toc: true
     - [API conventions]
     - [Logging conventions]
 
+## Code Comment Templates With Go
+
+### Code Comments With Normal Method
+
+* template
+
+```go
+// ${function_name}
+//  @receiver ${receiver}
+//  @param ${params}
+//  @return ${return_types}
+```
+
+* example
+
+```go
+// Identity figure the configuration's identity.
+// identity = user + space todo
+//  @receiver configuration current config
+//  @return string identity the configuration's empty able identity
+func (configuration *Configuration) Identity() string {
+}
+```
+
+### Code Comments With Interface
+
+* template
+
+```go
+// ${interface_name}
+```
+
+* example
+
+```go
+// IMap map interface
+type IMap interface {
+}
+```
+
+### Code Comments With Interface Method
+
+* template
+
+```go
+// ${function_name} ${todo}
+//  @receiver ${receiver}
+//  @param ${params}
+//  @return ${return_types}
+```
+
+* example
+
+```go
+// Get get value element by key
+//  @param key key
+//  @return value value
+//  @return loaded success is true, fail is false
+Get(key interface{}) (value interface{}, loaded bool)
+```
+
+### Code Comments With Struct
+
+* template
+
+```go
+// ${struct_name}
+```
+
+* example
+
+```go
+// Configuration configuration structure
+type Configuration struct {}
+```
+
+### Code Comment With Struct Field
+
+* template
+
+```go
+// ${struct_field_name} ${todo}
+```
+
+* example
+
+```go
+type Configuration struct {
+  // user user information entity
+  user  *entity.User
+}
+```
+
 ## Testing conventions
 
   - All new packages and most new significant functionality must come with unit tests.
-  - Table-driven tests are preferred for testing multiple scenarios/inputs. 
+  - Table-driven tests are preferred for testing multiple scenarios/inputs.
   - Do not expect an asynchronous thing to happen immediately---do not wait for one second and expect a pod to be running. Wait and retry instead.
   - See the [testing guide](../testing-guide) for additional testing advice.
 
