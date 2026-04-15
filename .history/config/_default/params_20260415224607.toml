@@ -1,36 +1,36 @@
 # Meta Data for SEO
 
 ## Homepage
-description = "focuses on and researches computer open source technology, and aims to use open source to give back to open source."
 title = "AcmeStack"
-titleAddition = "The Opening Technology Observer"
 titleSeparator = "-"
+titleAddition = "The Opening Technology Observer"
+description = "focuses on and researches computer open source technology, and aims to use open source to give back to open source."
 
 ## Documentation
 docsVersion = "v0.0.1"
 
 ## Open Graph
-domainTLD = "acmestack.com"
 images = ["acmestack.png"]
 ogLocale = "zh_CN"
+domainTLD = "acmestack.org"
 titleHome = "AcmeStack Community"
 
 ## JSON-LD
 # schemaType = "Person"
+schemaType = "Organization"
+schemaName = "AcmeStack"
 schemaAuthor = "qicz"
 schemaAuthorGitHub = "https://github.com/acmestack"
-schemaGitHub = "https://github.com/acmestack"
-schemaImage = "acmestack.png"
-schemaImageHeight = 640
-schemaImageWidth = 1280
-schemaLinkedIn = ""
 schemaLocale = "en-US"
 schemaLogo = "acmestack-logo.png"
-schemaLogoHeight = 512
 schemaLogoWidth = 512
-schemaName = "AcmeStack"
+schemaLogoHeight = 512
+schemaImage = "acmestack.png"
+schemaImageWidth = 1280
+schemaImageHeight = 640
+schemaLinkedIn = ""
+schemaGitHub = "https://github.com/acmestack"
 schemaSection = "blog"
-schemaType = "Organization"
 
 ## Sitelinks Search Box
 siteLinksSearchBox = false
@@ -39,15 +39,15 @@ siteLinksSearchBox = false
 themeColor = "#fff"
 
 # Images
+quality = 85
 bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
-lqipWidth = "20x"
 portraitPhotoWidths = [800, 700, 600, 500]
-quality = 85
+lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "Copyright © 2013-2022 <a class=\"text-muted\" href=\"https://acmestack.com/\">AcmeStack</a> All rights reserved."
+footer = "Copyright © 2013-2022 <a class=\"text-muted\" href=\"https://acmestack.org/\">AcmeStack</a> All rights reserved."
 
 # Feed
 copyRight = "Copyright (c) 2013-2022 AcmeStack All rights reserved."
@@ -68,20 +68,20 @@ editPage = true
 lastMod = true
 
 [options]
-bootStrapJs = true
-breadCrumb = true
-clipBoard = true
-darkMode = true
-docsVersioning = true
-flexSearch = true
-fullWidth = false
-highLight = true
-instantPage = true
-kaTex = false
-lazySizes = true
-multilingualMode = true
+  lazySizes = true
+  clipBoard = true
+  instantPage = true
+  flexSearch = true
+  darkMode = true
+  bootStrapJs = true
+  breadCrumb = true
+  highLight = true
+  kaTex = false
+  multilingualMode = true
+  docsVersioning = true
+  fullWidth = false
 
 [menu]
-[menu.section]
-auto = true
-collapsibleSidebar = true
+  [menu.section]
+    auto = true
+    collapsibleSidebar = true
